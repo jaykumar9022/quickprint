@@ -1,0 +1,8 @@
+# QuickPrint Windows Print Agent Dependencies
+requests>=2.31.0
+toml>=0.10.2
+pydantic>=2.5.0
+pypdf>=3.17.0
+# Windows specific API - pywin32 provides win32print, win32api
+pywin32>=306; sys_platform == 'win32'
+pytest>=7.4.0

@@ -1,0 +1,22 @@
+# QuickPrint Windows Print Agent Configuration
+[server]
+api_base_url = "https://your-shop-quickprint-domain.com/api/v1"
+poll_interval_seconds = 3
+heartbeat_interval_seconds = 15
+request_timeout_seconds = 30
+
+[agent]
+name = "Front-Desk-Windows11-Main"
+registration_key = "QP-AGENT-SECURE-KEY-8821"
+api_key = "agent_sec_token_991823719283" # Populated after registration or from Admin panel
+
+[printer]
+default_printer_override = "" # Leave blank to auto-detect Windows default
+pdf_rendering_dpi = 300
+temp_storage_dir = "C:\\QuickPrint\\TempSpool"
+auto_clean_after_print = true
+
+[logging]
+level = "INFO"
+log_to_file = true
+log_file_path = "C:\\QuickPrint\\Logs\\agent.log"
