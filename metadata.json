@@ -1,0 +1,6 @@
+{
+  "name": "QuickPrint — QR-Based Automatic Printing SaaS",
+  "description": "Scan, upload, pay, and print instantly. High-performance QR-based automated document printing SaaS for physical print shops with real-time Windows Print Agent dispatch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
