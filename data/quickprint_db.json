@@ -1,0 +1,368 @@
+{
+  "version": 1,
+  "shop": {
+    "id": "shop_001",
+    "name": "QuickPrint Xerox & Digital Hub",
+    "tagline": "High Speed Laser & Color Printing Station",
+    "address": "YOUR_SHOP_ADDRESS",
+    "phone": "YOUR_SHOP_PHONE",
+    "email": "YOUR_SHOP_EMAIL",
+    "upiVpa": "YOUR_SHOP_UPI_VPA",
+    "currency": "INR",
+    "minOrderPaise": 500,
+    "maxFileSizeMb": 25,
+    "maxPagesAllowed": 250,
+    "retentionHours": 2,
+    "webhookSecret": "REPLACE_WITH_RANDOM_WEBHOOK_SECRET",
+    "agentRegistrationKey": "REPLACE_WITH_RANDOM_AGENT_KEY",
+    "wifiSsid": "YOUR_SHOP_WIFI_SSID",
+    "wifiPassword": "REPLACE_WITH_WIFI_PASSWORD",
+    "createdAt": "2026-10-12T16:02:34.152Z",
+    "updatedAt": "2026-10-12T16:02:34.152Z"
+  },
+  "pricing": {
+    "id": "price_001",
+    "shopId": "shop_001",
+    "bwPricePaise": 200,
+    "colorPricePaise": 1000,
+    "duplexMultiplier": 0.9,
+    "paperSizeRatesPaise": {
+      "A4": 0,
+      "Legal": 100,
+      "A3": 600
+    },
+    "paperTypeRatesPaise": {
+      "Normal (75gsm)": 0,
+      "Bond (100gsm)": 300,
+      "Glossy Photo (180gsm)": 1500
+    },
+    "updatedAt": "2026-10-12T16:02:34.152Z"
+  },
+  "documents": {},
+  "orders": {},
+  "orderItems": {},
+  "payments": {},
+  "webhooks": [],
+  "agents": {
+    "agent_win_desk_01": {
+      "id": "agent_win_desk_01",
+      "name": "Front-Desk Win11 Print Station (HP & Epson)",
+      "machineHostname": "SHOP-PC-WIN11",
+      "ipAddress": "192.168.1.104",
+      "apiKey": "agent_sec_token_991823719283",
+      "status": "ONLINE",
+      "lastHeartbeat": "2026-10-12T16:02:34.152Z",
+      "version": "QuickPrint-Agent-v1.4.2-Windows",
+      "printers": [
+        {
+          "name": "HP LaserJet Pro M404dn (Network B&W Duplex)",
+          "isDefault": true,
+          "status": "Ready - Paper Loaded",
+          "supportedPaperSizes": [
+            "A4",
+            "Legal"
+          ],
+          "supportsColor": false,
+          "supportsDuplex": true
+        },
+        {
+          "name": "Epson EcoTank L3250 (Color High-Res)",
+          "isDefault": false,
+          "status": "Ready - Ink Levels 94%",
+          "supportedPaperSizes": [
+            "A4",
+            "Legal",
+            "A3"
+          ],
+          "supportsColor": true,
+          "supportsDuplex": false
+        },
+        {
+          "name": "Canon imageRUNNER 2625 Heavy Duty Copier",
+          "isDefault": false,
+          "status": "Ready - Trays 1-3 Full",
+          "supportedPaperSizes": [
+            "A4",
+            "A3",
+            "Legal"
+          ],
+          "supportsColor": false,
+          "supportsDuplex": true
+        }
+      ],
+      "createdAt": "2026-10-12T16:02:34.152Z",
+      "updatedAt": "2026-10-12T16:02:34.152Z"
+    }
+  },
+  "printJobs": {
+    "job_test_1791820954183": {
+      "id": "job_test_1791820954183",
+      "orderId": "test_ord_1791820954180",
+      "publicId": "QP-TEST-2360",
+      "printerName": "HP LaserJet Pro M404dn",
+      "status": "CLAIMED",
+      "config": {
+        "printMode": "bw",
+        "paperSize": "A4",
+        "printSides": "single",
+        "copies": 2,
+        "pageSelection": "all"
+      },
+      "documentId": "doc_test_123",
+      "totalPages": 2,
+      "copies": 1,
+      "retryCount": 0,
+      "createdAt": "2026-10-12T16:02:34.183Z",
+      "updatedAt": "2026-10-12T16:02:34.183Z",
+      "agentId": "agent_win_desk_01",
+      "claimedAt": "2026-10-12T16:02:34.183Z"
+    },
+    "job_test_1791820986716": {
+      "id": "job_test_1791820986716",
+      "orderId": "test_ord_1791820986716",
+      "publicId": "QP-TEST-6864",
+      "printerName": "HP LaserJet Pro M404dn",
+      "status": "CLAIMED",
+      "config": {
+        "printMode": "bw",
+        "paperSize": "A4",
+        "printSides": "single",
+        "copies": 2,
+        "pageSelection": "all",
+        "orientation": "portrait",
+        "paperType": "Normal (75gsm)"
+      },
+      "documentId": "doc_test_123",
+      "totalPages": 2,
+      "copies": 1,
+      "retryCount": 0,
+      "createdAt": "2026-10-12T16:03:06.717Z",
+      "updatedAt": "2026-10-12T16:03:06.717Z",
+      "agentId": "agent_win_desk_01",
+      "claimedAt": "2026-10-12T16:03:06.717Z"
+    },
+    "job_test_1791821029093": {
+      "id": "job_test_1791821029093",
+      "orderId": "test_ord_1791821029092",
+      "publicId": "QP-TEST-8836",
+      "printerName": "HP LaserJet Pro M404dn",
+      "status": "CLAIMED",
+      "config": {
+        "printMode": "bw",
+        "paperSize": "A4",
+        "printSides": "single",
+        "copies": 2,
+        "pageSelection": "all",
+        "orientation": "portrait",
+        "paperType": "Normal (75gsm)"
+      },
+      "documentId": "doc_test_123",
+      "totalPages": 2,
+      "copies": 1,
+      "retryCount": 0,
+      "createdAt": "2026-10-12T16:03:49.093Z",
+      "updatedAt": "2026-10-12T16:03:49.093Z",
+      "agentId": "agent_win_desk_01",
+      "claimedAt": "2026-10-12T16:03:49.093Z"
+    },
+    "job_test_1791821756629": {
+      "id": "job_test_1791821756629",
+      "orderId": "test_ord_1791821756628",
+      "publicId": "QP-TEST-5480",
+      "printerName": "HP LaserJet Pro M404dn",
+      "status": "CLAIMED",
+      "config": {
+        "printMode": "bw",
+        "paperSize": "A4",
+        "printSides": "single",
+        "copies": 2,
+        "pageSelection": "all",
+        "orientation": "portrait",
+        "paperType": "Normal (75gsm)"
+      },
+      "documentId": "doc_test_123",
+      "totalPages": 2,
+      "copies": 1,
+      "retryCount": 0,
+      "createdAt": "2026-10-12T16:15:56.629Z",
+      "updatedAt": "2026-10-12T16:15:56.630Z",
+      "agentId": "agent_win_desk_01",
+      "claimedAt": "2026-10-12T16:15:56.630Z"
+    },
+    "job_test_1791822824825": {
+      "id": "job_test_1791822824825",
+      "orderId": "test_ord_1791822824824",
+      "publicId": "QP-TEST-8032",
+      "printerName": "HP LaserJet Pro M404dn",
+      "status": "CLAIMED",
+      "config": {
+        "printMode": "bw",
+        "paperSize": "A4",
+        "printSides": "single",
+        "copies": 2,
+        "pageSelection": "all",
+        "orientation": "portrait",
+        "paperType": "Normal (75gsm)"
+      },
+      "documentId": "doc_test_123",
+      "totalPages": 2,
+      "copies": 1,
+      "retryCount": 0,
+      "createdAt": "2026-10-12T16:33:44.825Z",
+      "updatedAt": "2026-10-12T16:33:44.826Z",
+      "agentId": "agent_win_desk_01",
+      "claimedAt": "2026-10-12T16:33:44.826Z"
+    },
+    "job_test_1791823107914": {
+      "id": "job_test_1791823107914",
+      "orderId": "test_ord_1791823107913",
+      "publicId": "QP-TEST-4051",
+      "printerName": "HP LaserJet Pro M404dn",
+      "status": "CLAIMED",
+      "config": {
+        "printMode": "bw",
+        "paperSize": "A4",
+        "printSides": "single",
+        "copies": 2,
+        "pageSelection": "all",
+        "orientation": "portrait",
+        "paperType": "Normal (75gsm)"
+      },
+      "documentId": "doc_test_123",
+      "totalPages": 2,
+      "copies": 1,
+      "retryCount": 0,
+      "createdAt": "2026-10-12T16:38:27.914Z",
+      "updatedAt": "2026-10-12T16:38:27.914Z",
+      "agentId": "agent_win_desk_01",
+      "claimedAt": "2026-10-12T16:38:27.914Z"
+    }
+  },
+  "printEvents": [
+    {
+      "id": "ev_1791820954183_800f5e",
+      "jobId": "job_test_1791820954183",
+      "state": "CLAIMED",
+      "message": "Job locked by station agent_win_desk_01",
+      "timestamp": "2026-10-12T16:02:34.184Z"
+    },
+    {
+      "id": "ev_1791820986717_b7fd25",
+      "jobId": "job_test_1791820986716",
+      "state": "CLAIMED",
+      "message": "Job locked by station agent_win_desk_01",
+      "timestamp": "2026-10-12T16:03:06.717Z"
+    },
+    {
+      "id": "ev_1791821029093_ab3aff",
+      "jobId": "job_test_1791821029093",
+      "state": "CLAIMED",
+      "message": "Job locked by station agent_win_desk_01",
+      "timestamp": "2026-10-12T16:03:49.093Z"
+    },
+    {
+      "id": "ev_1791821756630_0d56f3",
+      "jobId": "job_test_1791821756629",
+      "state": "CLAIMED",
+      "message": "Job locked by station agent_win_desk_01",
+      "timestamp": "2026-10-12T16:15:56.630Z"
+    },
+    {
+      "id": "ev_1791822824826_238c2c",
+      "jobId": "job_test_1791822824825",
+      "state": "CLAIMED",
+      "message": "Job locked by station agent_win_desk_01",
+      "timestamp": "2026-10-12T16:33:44.826Z"
+    },
+    {
+      "id": "ev_1791823107914_2a1fcc",
+      "jobId": "job_test_1791823107914",
+      "state": "CLAIMED",
+      "message": "Job locked by station agent_win_desk_01",
+      "timestamp": "2026-10-12T16:38:27.915Z"
+    }
+  ],
+  "refunds": [],
+  "auditLogs": [
+    {
+      "id": "aud_1791823108750_a82b842c",
+      "actor": "SYSTEM",
+      "action": "TTL_PURGE",
+      "target": "expired_test.pdf",
+      "details": "Document TTL expired. Securely removed from storage. (ID: doc_expired_1791823108749)",
+      "timestamp": "2026-10-12T16:38:28.750Z"
+    },
+    {
+      "id": "aud_1791823107915_b7d998ff",
+      "actor": "TEST_RUNNER",
+      "action": "PHASE1_VERIFY",
+      "target": "DATABASE_CORE",
+      "details": "Phase 1 verification completed.",
+      "timestamp": "2026-10-12T16:38:27.915Z"
+    },
+    {
+      "id": "aud_1791822825710_eead643f",
+      "actor": "SYSTEM",
+      "action": "TTL_PURGE",
+      "target": "expired_test.pdf",
+      "details": "Document TTL expired. Securely removed from storage. (ID: doc_expired_1791822825706)",
+      "timestamp": "2026-10-12T16:33:45.710Z"
+    },
+    {
+      "id": "aud_1791822824827_ba871f1b",
+      "actor": "TEST_RUNNER",
+      "action": "PHASE1_VERIFY",
+      "target": "DATABASE_CORE",
+      "details": "Phase 1 verification completed.",
+      "timestamp": "2026-10-12T16:33:44.827Z"
+    },
+    {
+      "id": "aud_1791822599687_95099f79",
+      "actor": "SYSTEM",
+      "action": "TTL_PURGE",
+      "target": "expired_test.pdf",
+      "details": "Document TTL expired. Securely removed from storage. (ID: doc_expired_1791822599687)",
+      "timestamp": "2026-10-12T16:29:59.688Z"
+    },
+    {
+      "id": "aud_1791821756631_e26689c4",
+      "actor": "TEST_RUNNER",
+      "action": "PHASE1_VERIFY",
+      "target": "DATABASE_CORE",
+      "details": "Phase 1 verification completed.",
+      "timestamp": "2026-10-12T16:15:56.631Z"
+    },
+    {
+      "id": "aud_1791821029094_20bf42f5",
+      "actor": "TEST_RUNNER",
+      "action": "PHASE1_VERIFY",
+      "target": "DATABASE_CORE",
+      "details": "Phase 1 verification completed.",
+      "timestamp": "2026-10-12T16:03:49.094Z"
+    },
+    {
+      "id": "aud_1791820986718_edab8493",
+      "actor": "TEST_RUNNER",
+      "action": "PHASE1_VERIFY",
+      "target": "DATABASE_CORE",
+      "details": "Phase 1 verification completed.",
+      "timestamp": "2026-10-12T16:03:06.718Z"
+    },
+    {
+      "id": "aud_1791820954184_71685eef",
+      "actor": "TEST_RUNNER",
+      "action": "PHASE1_VERIFY",
+      "target": "DATABASE_CORE",
+      "details": "Phase 1 verification completed.",
+      "timestamp": "2026-10-12T16:02:34.184Z"
+    },
+    {
+      "id": "aud_init_001",
+      "actor": "SYSTEM",
+      "action": "DATABASE_BOOTSTRAP",
+      "target": "QUICKPRINT_STORE",
+      "details": "Initialized persistent schema with verified indexes and foreign keys.",
+      "timestamp": "2026-10-12T16:02:34.152Z"
+    }
+  ]
+}
